@@ -1,0 +1,26 @@
+{
+  "name": "introduccion-node",
+  "version": "1.0.0",
+  "description": "Intro Node curso Mean-StackIII",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcncodes-training/intro-node.git"
+  },
+  "keywords": [
+    "node",
+    "intro"
+  ],
+  "author": "bcodes.academy@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bcncodes-training/intro-node/issues"
+  },
+  "homepage": "https://github.com/bcncdoes-training/intro-node#readme",
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
+}

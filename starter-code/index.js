@@ -1,3 +1,4 @@
+
 class SortedList {
 
 
@@ -7,16 +8,34 @@ class SortedList {
       }
 
     add(x) {
-       var push = items.push('x');
-        items.sort();
+       this.items.push(x);
+       this.items.sort();
+       this.length++;
 
     }
+
     get(pos) {}
     max() {}
     min() {}
     average() {}
     sum() {}
 }
+
+
+var lista = new SortedList();
+
+
+console.log(lista.length);
+
+ lista.add(4);
+ lista.add(5);
+ lista.add(1);
+
+ console.log(lista.length);
+
+
+console.log(lista);
+
 
 module.exports = SortedList;
 

@@ -34,18 +34,3 @@ class SortedList {
 }
 
 module.exports = SortedList;
-
-
-let sl=new SortedList;
-var foo = 10;
-      for(i=1; i<200; i++) {
-        sl.add(foo*i);
-        console.log(i, sl.get(i), foo*i);
-      }      
-console.log(sl);
-console.log(sl.get(99));
-console.log(sl.get(100));
-console.log(sl.get(101));
-console.log(sl.get(2));
-console.log(sl.average());
-

@@ -21,7 +21,11 @@ class SortedList {
     }
 
 
-    max() {}
+    max() {
+        return parseInt(Math.max(this.items));
+        
+
+    }
     min() {}
     average() {}
     sum() {}
@@ -31,18 +35,17 @@ class SortedList {
 var lista = new SortedList();
 
 
-
-
-
  lista.add(4);
  lista.add(5);
  lista.add(1);
  lista.add(6);
 
 var posicion = lista.get(1);
+var maximo = lista.max();
 
 console.log(lista.length);
 console.log(posicion);
+console.log(maximo);
 
 console.log(lista);
 

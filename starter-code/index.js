@@ -14,7 +14,13 @@ class SortedList {
 
     }
 
-    get(pos) {}
+    get(pos) {
+        
+    return this.items[pos-1];
+
+    }
+
+
     max() {}
     min() {}
     average() {}
@@ -25,14 +31,18 @@ class SortedList {
 var lista = new SortedList();
 
 
-console.log(lista.length);
+
+
 
  lista.add(4);
  lista.add(5);
  lista.add(1);
+ lista.add(6);
 
- console.log(lista.length);
+var posicion = lista.get(1);
 
+console.log(lista.length);
+console.log(posicion);
 
 console.log(lista);
 

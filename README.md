@@ -2,19 +2,26 @@
 
 ## Requisitos y entrega
 
-Clona la rama del repositorio `github.com/bcncodes-training/intro-node.git` que lleva tu nombre. Una vez completado el ejercicio actualiza la rama con tu solución.
 
-    - Practicarás con objetos y clases.
+1. Clona el repositorio `github.com/bcncodes-training/intro-node.git`
+2. Haz un checkout de la rama que se te ha asignado, cuyo nombre comienza por `pair[num de pareja]`
 
-- Upon completion, run the following commands
+```
+git checkout pair[num de pareja]
+```
+
+3. Realiza el ejercicio, en este caso practicarás con objetos y clases.
+
+4. Una vez completado lanza los siguientes comandos:
 
 ```
 git add .
 git commit -m "done"
-git push origin master
+git push
+
 ```
 
-- Navigate to your repo and [create a Pull Request](https://help.github.com/articles/creating-a-pull-request/)
+- Desde el repositorio [crea un Pull Request](https://help.github.com/articles/creating-a-pull-request/) con el nombre de la pareja en el subject del mensaje y el texto EJERCICIO COMPLETADO.
 
 ## Testing
 

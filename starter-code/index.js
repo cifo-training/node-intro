@@ -11,8 +11,15 @@ class SortedList {
   }
 
   get(pos) {
+    let posicion = 0;
 
-    return this.items[pos-1];
+    if (pos <= 0 || pos > this.length) {
+      posicion = 0;
+    } else {
+      posicion = this.items[pos - 1];
+    }
+
+    return posicion;
   }
 
   max() {
@@ -53,12 +60,12 @@ class SortedList {
 
 var lista = new SortedList();
 
-lista.add();
-lista.add();
-lista.add();
-lista.add();
+lista.add(2);
+lista.add(4);
+lista.add(3);
+lista.add(5);
 
-var posicion = lista.get(1);
+var posicion = lista.get(5);
 var maximo = lista.max();
 var minimo = lista.min();
 var media = lista.average();

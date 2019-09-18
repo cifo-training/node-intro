@@ -10,15 +10,12 @@ class SortedList {
     }
 
     add(item) {
-        for (let i = 0; i < this.length; i++) {
-            if (item < this.items[i]) {
-                this.items.splice(i, 0, item);
-                this.length++;
-                return;
-            }
+        if (isNaN(item)) {
+            throw new Error("NotANumber");
         }
         this.items.push(item);
         this.length++;
+        this.items.sort((a, b) => a - b);
     }
 
     get(pos) {;

@@ -18,6 +18,13 @@ describe('SortedList', function() {
     beforeEach(function(){
       sl = new SortedList();
     });
+    // Test added by David
+    it('should return NotANumber exception if parameter "x" is not a number', function() {
+        assert.throws(() => {
+          sl.add("x");
+        }, Error, '/NotANumber/');
+    });
+
     it('should add a single value to SortedList', function() {
       assert.equal(sl.length, 0);
       sl.add(1);
@@ -36,6 +43,16 @@ describe('SortedList', function() {
       assert.equal(sl.get(1), 10);
       assert.equal(sl.get(2), 20);
       assert.equal(sl.get(3), 30);
+    });
+    it('should add a fourth value to SortedList, sorted', function() {
+      sl.add(30);
+      sl.add(20);
+      sl.add(10);
+      sl.add(40);
+      assert.equal(sl.get(1), 10);
+      assert.equal(sl.get(2), 20);
+      assert.equal(sl.get(3), 30);
+      assert.equal(sl.get(4), 40);
     });
   });
 
@@ -155,4 +172,6 @@ describe('SortedList', function() {
       assert.equal(sl.sum(), 6);
     });
   });
+
+
 });

@@ -22,7 +22,8 @@ class SortedList {
 
 
     max() {
-        return parseInt(Math.max(this.items));
+        
+        return this.items[this.items.length -1];
         
 
     }
@@ -51,4 +52,6 @@ console.log(lista);
 
 
 module.exports = SortedList;
+
+
 

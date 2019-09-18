@@ -9,3 +9,7 @@ class SortedList {
 }
 
 module.exports = SortedList;
+
+function name(params) {
+    
+}

@@ -27,15 +27,15 @@ describe('SortedList', function() {
       sl.add(20);
       sl.add(10);
       assert.equal(sl.get(1), 10);
-      assert.equal(sl.get(2), 20);
+      assert.equal(sl.get(0), 20);
     });
     it('should add a third value to SortedList, sorted', function() {
       sl.add(30);
       sl.add(20);
       sl.add(10);
-      assert.equal(sl.get(1), 10);
-      assert.equal(sl.get(2), 20);
-      assert.equal(sl.get(3), 30);
+      assert.equal(sl.get(2), 10);
+      assert.equal(sl.get(1), 20);
+      assert.equal(sl.get(0), 30);
     });
   });
 
@@ -59,7 +59,7 @@ describe('SortedList', function() {
       var foo = 10;
       for(i=1; i<200; i++) {
         sl.add(foo*i);
-        assert.equal(sl.get(i), foo*i);
+        assert.equal(sl.get(i-1), foo*i);
       }
     });
   });
@@ -129,6 +129,7 @@ describe('SortedList', function() {
       for(i=0; i<101; i++){
         sl.add(i*2);
       }
+      console.log(sl.average());
       assert.equal(sl.average(), 100);
     })
   });

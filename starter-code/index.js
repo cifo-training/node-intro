@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 class SortedList {
@@ -52,4 +53,24 @@ for(let i= 0; i<101; i++){
     sl.add(i*2);
   }
 console.log(sl.average());*/
+=======
+class SortedList {
+    constructor() {
+        this.length = 0;
+        this.items = [];
+    }
+    add(item) {
+        let item = []; 
+        for(let i=1; i<=30; i++){
+        item.push(i);   
+        }
+    }
+    get(pos) {}
+    max() {}
+    min() {}
+    average() {}
+    sum() {}
+}
+ 
+>>>>>>> 7a7d05930dc6fbc3f3e475ab0e40c4eb52612ce1
 module.exports = SortedList;

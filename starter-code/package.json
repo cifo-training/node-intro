@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/bcncodes-training/intro-node/issues"
   },
-  "homepage": "https://github.com/bcncdoes-training/intro-node#readme",
+  "homepage": "https://github.com/bcncodes-training/intro-node#readme",
   "devDependencies": {
     "mocha": "^6.2.0"
   }
